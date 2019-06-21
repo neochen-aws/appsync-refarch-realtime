@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {Animated} from "react-animated-css";
