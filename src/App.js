@@ -289,6 +289,14 @@ class App extends Component {
         <nav className="navbar navbar-dark bg-dark">
           <p className="navbar-brand p-0">TMDb Popular Movies - Vote and Discuss in Real-Time</p>
         </nav>
+        <div className='player-wrapper'>
+          <ReactPlayer
+            className='react-player'
+            url='https://d2qohgpffhaffh.cloudfront.net/HLS/vanlife/withad/sdr_uncage_vanlife_admarker_60sec.m3u8'
+            width='100%'
+            height='100%'
+          />
+        </div>
         <div className="container-fluid mx-auto">
           <br/>
           <div className="card p-3 shadow">
