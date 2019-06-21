@@ -294,8 +294,9 @@ class App extends Component {
           <ReactPlayer
             className='react-player'
             url='https://d2qohgpffhaffh.cloudfront.net/HLS/vanlife/withad/sdr_uncage_vanlife_admarker_60sec.m3u8'
-            width='100%'
-            height='100%'
+            controls='true'
+            width='75%'
+            height='75%'
           />
         </div>
         <div className="container-fluid mx-auto">
