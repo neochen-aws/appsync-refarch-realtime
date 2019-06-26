@@ -345,53 +345,6 @@ class App extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4 p-1 card-body">
-                  <div className="mx-auto bg-light rounded col-height">
-                  {this.state.user ? 
-                    <table className="table table-borderless bg-dark text-white rounded p-0">
-                      <tbody>
-                        <tr>
-                          <td className="p-3">
-                            <h5 className="float-left">Chat</h5> 
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    : 
-                    <table className="table table-borderless bg-dark text-white rounded p-0">
-                      <tbody>
-                          <tr>
-                            <td className="p-2">
-                              <form onSubmit={this.handleUser}>
-                                <div className="input-group ">
-                                  <input type="text" className="form-control form-control-lg" name="user" placeholder="Choose your Handle to Chat" aria-label=">" aria-describedby="basic-addon2" value={this.state.value} onChange={this.handleChange}/>
-                                  <div className="input-group-append">
-                                    <button className="btn btn-dark border-light" type="submit"><i className="fas fa-user"></i></button>
-                                  </div>
-                                </div>
-                              </form>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                  }
-                    <div className="bg-light p-0 rounded p-2">
-                      <ScrollToBottom className="chat">
-                        {messages}
-                      </ScrollToBottom>
-                    </div>
-                    <form onSubmit={this.handleSendMessage}>
-                    <fieldset {...disabled}>
-                      <div className="input-group mb-4">
-                        <input type="text" className="form-control form-control-lg" name="message" placeholder="Send Message" aria-label=">" aria-describedby="basic-addon2" value={this.state.value} onChange={this.handleChange}/>
-                        <div className="input-group-append">
-                          <button className="btn btn-primary" type="submit"><i className="fas fa-comment"></i></button>
-                        </div>
-                      </div>
-                      </fieldset>
-                    </form>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
