@@ -336,7 +336,21 @@ class App extends Component {
                           </tr>
                         </tbody>
                       </table>
-                   <table className="table table-striped">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto text-center">
+            {this.state.display===true || this.state.player==="1" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-heart fa-2x text-primary p-2"></i></Animated> : null}
+            {this.state.display===true || this.state.player==="2" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-grin fa-2x text-primary p-2"></i></Animated>  : null}
+            {this.state.display===true || this.state.player==="3" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-meh fa-2x text-primary p-2"></i></Animated>  : null}
+            {this.state.display===true || this.state.player==="4" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-question-circle fa-2x text-primary p-2"></i></Animated>  : null}
+            {this.state.display===true || this.state.player==="5" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-angry fa-2x text-primary p-2"></i></Animated>  : null}
+          </div>
+        </div>
+        <table className="table table-striped">
           <thead className="thead-dark">
             <tr>
               <th className="bg-white text-dark text-center text-uppercase border-top-0"><strong><h4>Leaderboard</h4></strong></th>
@@ -372,20 +386,6 @@ class App extends Component {
             </tr>
           </tbody>
         </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto text-center">
-            {this.state.display===true || this.state.player==="1" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-heart fa-2x text-primary p-2"></i></Animated> : null}
-            {this.state.display===true || this.state.player==="2" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-grin fa-2x text-primary p-2"></i></Animated>  : null}
-            {this.state.display===true || this.state.player==="3" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-meh fa-2x text-primary p-2"></i></Animated>  : null}
-            {this.state.display===true || this.state.player==="4" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-question-circle fa-2x text-primary p-2"></i></Animated>  : null}
-            {this.state.display===true || this.state.player==="5" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-angry fa-2x text-primary p-2"></i></Animated>  : null}
-          </div>
-        </div>
       </div>
     );
   }
