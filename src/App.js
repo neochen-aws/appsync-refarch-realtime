@@ -305,12 +305,6 @@ class App extends Component {
             <div className="p-2">
               <div className="row align-items-top p-0">
                 <div className="col-md-4 p-1 card-body">
-                  <div className="mx-auto text-center rounded bg-dark rounded col-height">
-                    <br/>
-                    {this.state.poster && (<img className="img-fluid rounded align-middle p-2" src={this.state.poster} alt="Poster"/>)}
-                  </div>
-                </div>
-                <div className="col-md-4 p-1 card-body">
                   <div className="mx-auto bg-light rounded col-height">
                       <table className="table table-borderless bg-dark text-white rounded">
                       <tbody>
@@ -356,7 +350,6 @@ class App extends Component {
             {this.state.display===true || this.state.player==="5" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-angry fa-2x text-primary p-2"></i></Animated>  : null}
           </div>
         </div>
-        <br/>
         <table className="table table-striped">
           <thead className="thead-dark">
             <tr>
