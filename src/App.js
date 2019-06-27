@@ -349,7 +349,6 @@ class App extends Component {
             {this.state.display===true || this.state.player==="4" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-question-circle fa-2x text-primary p-2"></i></Animated>  : null}
             {this.state.display===true || this.state.player==="5" ? <Animated animationIn="fadeOutUp" animationOut="slideOutUp" isVisible={this.state.animation}><i className="fas fa-angry fa-2x text-primary p-2"></i></Animated>  : null}
           </div>
-        </div>
         <table className="table table-striped">
           <thead className="thead-dark">
             <tr>
@@ -386,6 +385,7 @@ class App extends Component {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     );
   }
